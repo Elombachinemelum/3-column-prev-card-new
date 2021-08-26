@@ -1,0 +1,94 @@
+body{
+  font-size: 15px;
+}
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto 50px;
+  /* height: 100vh; *****this is another way to get the div container to center pr atleast come to the vertical middle */
+  max-width: 900px;
+
+
+}
+h2{
+   font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  font-size: 32px;
+}
+a{
+  background-color: hsl(0, 0%, 95%);
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  margin: 60px 0;
+  transition: all .35s ease-in-out;
+}
+a:hover{
+  color: white;
+  border: 2px solid white;
+  background-color: Transparent;
+}
+
+p{
+  font-family: 'Lexend Deca', sans-serif;
+  margin:0;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height:1.8;
+}
+
+img{
+  margin:20px;
+  margin-left: 0;
+}
+.div-padding{
+  padding: 40px 40px 0;
+  text-align: left;
+}
+.sedans{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 15px 0 0 15px;
+  display: block;
+}
+.sedans-anch{
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs{
+ background-color: hsl(184, 100%, 22%);
+ display: block;
+}
+.suvs-anch{
+  color:  hsl(184, 100%, 22%);
+}
+.luxury{
+ background-color:hsl(179, 100%, 13%);
+ border-radius: 0 15px 15px 0;
+ display: block;
+}
+.luxury-anch{
+  color: hsl(179, 100%, 13%);
+}
+.center{
+  height: 450px
+}
+
+@media (max-width:863px) {
+  .main-container{
+    display: block;
+    padding: 3% 6%;
+  }
+  .center{
+    height: auto;
+  }
+  .sedans{
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  .luxury{
+   border-radius: 0 0 0.625rem 0.625rem;
+  }
+}
